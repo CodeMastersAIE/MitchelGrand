@@ -3,3 +3,30 @@ p{
     text-align: center;
     
 }
+h1{
+    font-family: 'Times New Roman', Times, serif;
+
+}
+.footer_area {
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    margin-top: 152px
+}
+.footer_top_area {
+    background: #1e2126;
+    text-align: center;
+  }
+.footer_social li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+.footer_social li a {
+    font-size: 14px;
+    color: #e8e8e8;
+    line-height: 50px;
+}
+.footer_social li:hover a {
+    color: #00aced;
+}    
