@@ -1,20 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Contact Us</title>
+
     <!-- links start -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
         crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
         crossorigin="anonymous">
     <link rel="stylesheet" href="./styles/contactus.css">
-    <link rel="js" href="./contactus.js">
     <!-- links end -->
+
+    <title>Contact Us</title>
 </head>
-<body>
+
+<body class="bg-muted">
+
+    <!-- navigation bar start -->
+    <nav class="navbar navbar-expand-sm navbar-dark fixed-top bg-dark" id="main-nav">
+        <div class="container">
+            <a href="index.html" class="navbar-brand text-light"><img src="images/logo.jpg" width="40vw" height="40vh">
+                Mitchel Grand</a>
+            <button class="navbar-toggler transparent " data-toggle="collapse" data-target="#navbarCollapseid">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapseid">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="#home-section" class="nav-link btn  btn-outline-secondary text-light" style="border-radius:15px;"><i
+                                class="fas fa-home"></i>
+                            Home</a></li>
+                    <li class="nav-item">
+                        <a href="accomodation-section" class="nav-link  btn btn-outline-secondary transparent text-light"
+                            style="border-radius:15px;"><i class="fas fa-hotel"></i>
+                            Accommodation</a></li>
+                    <li class="nav-item">
+                        <a href="aboutUs-section" class="nav-link btn  btn-outline-secondary transparent text-light"
+                            style="border-radius:15px;"><i class="fas fa-handshake"></i>
+                            About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact-section" class="nav-link  btn btn-outline-secondary transparent text-light"
+                            style="border-radius:15px;">
+                            <i class="fas fa-mobile-alt"></i> Contact us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- navigation bar end -->
+    <!-- end head section -->
     <!--Contact us home-->
     <img src="./image Cus/contactimg1.jpg">
     <br>
@@ -97,116 +135,69 @@
 </div>
 </div>
 
-<!--
-    <form action="">
-    <script>
-        function finalCost(){
-            var roomType = document.getElementById("room_type").value;
-            var roomNum = document.getElementById("room_number").value;
-            var personNum = document.getElementById("person_number").value;
-            var childNum = document.getElementById("child_number").value;
-            var resFacilities = document.getElementById("res_facilities").value;
-
-            var total = (parseInt(roomType)*10) + ((roomNum)*2) + ((personNum)*3) + ((childNum)*2) + ((resFacilities)*5)
-
-            document.getElementById("result").innerHTML = total;
-        }
-    </script>
-
-
-</head>
-<body>
-     <div class="hotel_reserve_box">
-         <h3> Hotel Reservation Form </h3><br>
-         <form>
-             <div class="form-group">
-                 <label>Room/Suite Type</label>
-                 <select class="form-control" id="room_type" onchange="finalCost()">
-                     <option value="0" selected>Select Room/Suite </option>
-                     <option value="1"> Standard </option>
-                     <option value="2"> Deluxe </option>
-                     <option value="3"> Superior Deluxe </option>
-                     <option value="4"> Premier Deluxe  </option>
-                     <option value="5"> Executive Suite </option>
-                     <option value="6"> Junior Suite </option>
-                     <option value="7"> Honeymoon Suite </option>
-                 </select>
-             </div>
-             <div class="form-group">
-                 <label>Number of room/suite</label>
-                 <select class="form-control" id="room_number" onchange="finalCost()">
-                     <option value="0"> 0 </option>
-                     <option value="1"> 1 </option>
-                     <option value="2"> 2 </option>
-                     <option value="3"> 3 </option>
-                     <option value="4"> 4 </option>
-                     <option value="5"> 5 </option>
-                     <option value="6"> 6 </option>
-                     <option value="7"> 7 </option>
-                 </select>
-             </div>
-             <div class="form-group">
-                 <label>Number of persons</label>
-                 <select class="form-control" id="person_number" onchange="finalCost()">
-                     <option value="0"> 0 </option>
-                     <option value="1"> 1 </option>
-                     <option value="2"> 2 </option>
-                     <option value="3"> 3 </option>
-                     <option value="4"> 4 </option>
-                     <option value="5"> 5 </option>
-                     <option value="6"> 6 </option>
-                     <option value="7"> 7 </option>
-                 </select>
-             </div>
-             <div class="form-group">
-                 <label>Number of children</label>
-                 <select class="form-control" id="child_number" onchange="finalCost()">
-                     <option value="0"> 0 </option>
-                     <option value="1"> 1 </option>
-                     <option value="2"> 2 </option>
-                     <option value="3"> 3 </option>
-                     <option value="4"> 4 </option>
-                     <option value="5"> 5 </option>
-                     <option value="6"> 6 </option>
-                     <option value="7"> 7 </option>
-                 </select>
-             </div>
-             <div class="form-group">
-                 <label>Restaurant facilities?</label>
-                 <select class="form-control" id="res_facilities" onchange="finalCost()">
-                     <option value="0" selected> Do you want restaurant facilities? </option>
-                     <option value="2"> Yes </option>
-                     <option value="0"> No </option>
-                 </select>
-             </div><br>
-             <div class="form-group">
-                 <label>Total Cost ($) : </label>
-                 <span id="result" style="background-color: #27b05c;color: #fff;padding: 6px 70px;font-weight: 600;font-size: 18px; margin-left: 10px;border-radius: 5px;">0</span>
-             </div>
-         </form>
-     </div>-->
 
     <!-- footer -->
 
-    <footer class="footer_area bg-dark text-muted">
-        <div class="footer_top_area"> 
-            <div class="container">
-                <div class="row">
-                    <div class="col text-center py-1">
-                        <p>Copyright&nbsp;&copy;<span id="year"></span>&nbsp;<img src="images/Webp.net-resizeimage.png">&nbsp;&nbsp;&nbsp;</p>
-                    </div>
-                    <div class="pull-right">
-                    <ul class="footer_social">
-                        <li><a href="#"><i class="fab fa-facebook-f"></i>   </a></li>
-                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fab fa-google-plus-square"></i></a></li>
-                        <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
-                    </ul>
-                    </div>
+    <footer class="bg-dark text-muted fixed-bottom">
+
+        <div class="container">
+            <div class="row">
+                <div class="col text-center py-1">
+                    <p>Copyright&nbsp;&copy;<span id="year"></span>&nbsp;<img src="images/Webp.net-resizeimage.png">&nbsp;&nbsp;&nbsp;<button
+                            class="btn btn-primary mt-1" data-toggle="modal" data-target="#ContactModal">Contact Us</button></p>
                 </div>
             </div>
         </div>
     </footer>
     <!-- end footer -->
+
+
+    <!-- Contact us model -->
+
+    <div class="modal fade text-dark" id="ContactModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Contact Us</h5>
+                    <button class="close" data-dismiss="modal">
+                        <span>&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" class="form-control" />
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" />
+                        </div>
+                        <div class="form-group">
+                            <label for="Message">Message</label>
+                            <textarea class="form-control"></textarea>
+                        </div>
+                        <div class="modal-footer">
+                            <button class="btn btn-primary btn-block">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- end contact us -->
+
+
+    <!-- Start
+        script -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+    <!-- End Script -->
 </body>
+
 </html>
