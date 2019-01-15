@@ -9,6 +9,7 @@
     <!-- links start -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
         crossorigin="anonymous">
+    <link rel="stylesheet" href="/bower_components/bootstrap-horizon/bootstrap-horizon.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
         crossorigin="anonymous">
     <link rel="stylesheet" href="styles/accomodation.css">
@@ -40,13 +41,12 @@
                             style="border-radius:15px;"><i class="fas fa-hotel"></i>
                             Accommodation</a></li>
                     <li class="nav-item">
-                        <a href="about.html" class="nav-link btn  btn-outline-secondary transparent text-light"
-                            style="border-radius:15px;"><i class="fas fa-handshake"></i>
+                        <a href="about.html" class="nav-link btn  btn-outline-secondary transparent text-light" style="border-radius:15px;"><i
+                                class="fas fa-handshake"></i>
                             About us</a>
                     </li>
                     <li class="nav-item">
-                        <a href="contact.html" class="nav-link  btn btn-outline-secondary transparent text-light"
-                            style="border-radius:15px;">
+                        <a href="contact.html" class="nav-link  btn btn-outline-secondary transparent text-light" style="border-radius:15px;">
                             <i class="fas fa-mobile-alt"></i> Contact us</a>
                     </li>
                 </ul>
@@ -58,45 +58,57 @@
     <br><br><br><br>
     <!-- content start -->
 
-    <div id="packages" class="carousel slide" data-ride="carousel">
+    <!-- <div id="packages" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
             <li class="active" data-target="#packages" data-slide-to="0"></li>
             <li data-target="#packages" data-slide-to="1"></li>
             <li data-target="#packages" data-slide-to="2"></li>
         </ol>
         <div class="carousel-inner mb-5">
-            <div class="carousel-item active mb-5">
-                <div class="card mx-auto text-dark" style="width:80vw;overflow-y: scroll;">
+            <div class="carousel-item active mb-5 flex-row">
+
+            </div>
+
+            <div class="carousel-item">
+
+            </div>
+            <div class="carousel-item">
+
+            </div>
+        </div>
+    </div> -->
+
+    <!-- another -->
+
+    <div class="container-fluid">
+        <div class="row flex-row flex-nowrap">
+            <div class="col-lg-8 col-sm-4 ml-5">
+                <div class="card card-block" style="width: 90%;height:100%;">
                     <center>
-                        <img class="card-img-top img-fluid mt-2" src="images/accomodation/room1.jpg" style="height:50vh; width: 50vw;">
+                        <img class="card-img-top img-fluid mt-2" src="images/accomodation/room1.jpg" style="height:50vh; width: 80%;">
                         <div class="card-body mb-5">
-                            <h4 class="card-title">Suite</h4>
-                            <p class="card-text lead">For the ultimate in indulgence, reserve one of our Suites. The
-                                spacious and well appointed suites allow you to relax.
-                                Each Suite includes a <br>
-                                    <li>fully stocked minibar</li>
-                                    <li>Wifi</li>
-                                    <li>TV</li>
-                                    <li>Balcony view</li>
-                                    <li>Locker</li>
-                                    <li>IDD calls</li>
-                                    <li>Room Service</li>
-                                    <li>2 Rooms with king size bed each</li>
-                                    <li>laundry services</li>
-                                <br> and much more.
+                            <h4 class="card-title display-4">Suite</h4>
+                            <p class="card-text lead">For the ultimate in indulgence, reserve one of our Suites
+                                with ..<br>
+                                <li>fully stocked minibar</li>
+                                <li>Wifi</li>
+                                <li>TV</li>
+                                <li>Room Service</li>
+                                <li>2 Rooms with king size bed each</li>
+                                <li>laundry services</li>
+                                <br>and much more.
                             </p>
                             <h1 class="text-success">Price : LKR 15,000.00</h1>
                             <button class="btn btn-warning">Book Now</button>
                     </center>
                 </div>
             </div>
-
-            <div class="carousel-item">
-                <div class="card mx-auto" style="width:80vw;overflow-y: scroll;">
+            <div class="col-lg-8 col-sm-1">
+                <div class="card card-block" style="width: 90%;height:100%;">
                     <center>
-                        <img class="card-img-top img-fluid mt-2" src="images/accomodation/party.jpg" style="height:50vh; width: 50vw;">
+                        <img class="card-img-top img-fluid mt-2" src="images/accomodation/party.jpg" style="height:50vh; width: 80%;">
                         <div class="card-body mb-5">
-                            <h4 class="card-title">Partying</h4>
+                            <h4 class="card-title display-4">Partying</h4>
                             <p class="card-text lead"> <br>
                                 Enjoy your party to the last bit
                             </p>
@@ -106,14 +118,15 @@
                     </center>
                 </div>
             </div>
-            <div class="carousel-item">
-                <div class="card mx-auto" style="width:80vw;overflow-y: scroll;">
+            <div class="col-lg-8 col-sm-1 mr-5">
+                <div class="card card-block" style="width: 90%;height:100%;">
                     <center>
-                        <img class="card-img-top img-fluid mt-2" src="images/accomodation/wedding.jpg" style="height:50vh; width: 50vw;">
+                        <img class="card-img-top img-fluid mt-2" src="images/accomodation/wedding.jpg" style="height:50vh; width: 80%;">
                         <div class="card-body mb-5">
-                            <h4 class="card-title">Weddings</h4>
-                            <p class="card-text lead">It is an ideal setting to explore a legacy of romance, and create your own love story.
-                                    <br>
+                            <h4 class="card-title display-4">Weddings</h4>
+                            <p class="card-text lead">It is an ideal setting to explore a legacy of romance, and create
+                                your own love story.
+                                <br>
                             </p>
                             <p>Contact us for details..</p>
                             <h1 class="text-success">Price : Negotiable</h1>
@@ -121,18 +134,19 @@
                     </center>
                 </div>
             </div>
+
         </div>
     </div>
-
+    <br><br><br>
     <!-- CONTROLS -->
-    <a href="#packages" class="carousel-control-prev text-dark " data-slide="prev">
+    <!-- <a href="#packages" class="carousel-control-prev text-dark " data-slide="prev">
         <span class="carousel-control-prev-icon "></span>
     </a>
 
     <a href="#packages" class="carousel-control-next text-dark " data-slide="next">
         <span class="carousel-control-next-icon "></span>
     </a>
-    </div>
+    </div> -->
 
     <!-- content end -->
 
