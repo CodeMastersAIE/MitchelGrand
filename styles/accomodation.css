@@ -1,0 +1,23 @@
+body{
+    background-color: #343a40 ;
+    font-family: 'Roboto',sans-serif;
+     margin: 0;
+}
+.navbar{
+    background: rgba(58, 56, 56, 0.4);
+}
+.navbar:hover{
+    background:rgb(58 ,56,56);
+}
+.card{
+    background: rgba(255, 255, 255, 0.7)
+}
+.background{
+    position: fixed;
+    background-attachment: scroll;
+    background-size: cover;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+}

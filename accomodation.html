@@ -11,7 +11,7 @@
         crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
         crossorigin="anonymous">
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/accomodation.css">
     <!-- links end -->
 
     <title>Mitchel Grand</title>
@@ -19,8 +19,10 @@
 
 <body class="bg-muted">
 
+    <!-- backgroound -->
+    <img src="images/entrance2.jpg" class="background">
     <!-- navigation bar start -->
-    <nav class="navbar navbar-expand-sm navbar-dark fixed-top" id="main-nav">
+    <nav class="navbar navbar-expand-sm navbar-dark fixed-top mb-3" id="main-nav">
         <div class="container">
             <a href="index.html" class="navbar-brand text-light"><img src="images/logo.jpg" width="40vw" height="40vh">
                 Mitchel Grand</a>
@@ -30,20 +32,20 @@
             <div class="collapse navbar-collapse" id="navbarCollapseid">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a href="#home-section" class="nav-link btn  btn-outline-secondary text-light" style="border-radius:15px;"><i
+                        <a href="index.html" class="nav-link btn  btn-outline-secondary text-light" style="border-radius:15px;"><i
                                 class="fas fa-home"></i>
                             Home</a></li>
                     <li class="nav-item">
-                        <a href="accomodation-section" class="nav-link  btn btn-outline-secondary transparent text-light"
+                        <a href="accomodation.html" class="nav-link  btn btn-outline-secondary transparent text-light"
                             style="border-radius:15px;"><i class="fas fa-hotel"></i>
                             Accommodation</a></li>
                     <li class="nav-item">
-                        <a href="aboutUs-section" class="nav-link btn  btn-outline-secondary transparent text-light"
+                        <a href="about.html" class="nav-link btn  btn-outline-secondary transparent text-light"
                             style="border-radius:15px;"><i class="fas fa-handshake"></i>
                             About us</a>
                     </li>
                     <li class="nav-item">
-                        <a href="contact-section" class="nav-link  btn btn-outline-secondary transparent text-light"
+                        <a href="contact.html" class="nav-link  btn btn-outline-secondary transparent text-light"
                             style="border-radius:15px;">
                             <i class="fas fa-mobile-alt"></i> Contact us</a>
                     </li>
@@ -53,7 +55,86 @@
     </nav>
     <!-- navigation bar end -->
     <!-- end head section -->
+    <br><br><br><br>
+    <!-- content start -->
 
+    <div id="packages" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li class="active" data-target="#packages" data-slide-to="0"></li>
+            <li data-target="#packages" data-slide-to="1"></li>
+            <li data-target="#packages" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner mb-5">
+            <div class="carousel-item active mb-5">
+                <div class="card mx-auto text-dark" style="width:80vw;overflow-y: scroll;">
+                    <center>
+                        <img class="card-img-top img-fluid mt-2" src="images/accomodation/room1.jpg" style="height:50vh; width: 50vw;">
+                        <div class="card-body mb-5">
+                            <h4 class="card-title">Suite</h4>
+                            <p class="card-text lead">For the ultimate in indulgence, reserve one of our Suites. The
+                                spacious and well appointed suites allow you to relax.
+                                Each Suite includes a <br>
+                                    <li>fully stocked minibar</li>
+                                    <li>Wifi</li>
+                                    <li>TV</li>
+                                    <li>Balcony view</li>
+                                    <li>Locker</li>
+                                    <li>IDD calls</li>
+                                    <li>Room Service</li>
+                                    <li>2 Rooms with king size bed each</li>
+                                    <li>laundry services</li>
+                                <br> and much more.
+                            </p>
+                            <h1 class="text-success">Price : LKR 15,000.00</h1>
+                            <button class="btn btn-warning">Book Now</button>
+                    </center>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <div class="card mx-auto" style="width:80vw;overflow-y: scroll;">
+                    <center>
+                        <img class="card-img-top img-fluid mt-2" src="images/accomodation/party.jpg" style="height:50vh; width: 50vw;">
+                        <div class="card-body mb-5">
+                            <h4 class="card-title">Partying</h4>
+                            <p class="card-text lead"> <br>
+                                Enjoy your party to the last bit
+                            </p>
+                            <p>Contact us for details..</p>
+                            <h1 class="text-success">Price : Negotiable</h1>
+                            <button class="btn btn-warning">Book Now</button>
+                    </center>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="card mx-auto" style="width:80vw;overflow-y: scroll;">
+                    <center>
+                        <img class="card-img-top img-fluid mt-2" src="images/accomodation/wedding.jpg" style="height:50vh; width: 50vw;">
+                        <div class="card-body mb-5">
+                            <h4 class="card-title">Weddings</h4>
+                            <p class="card-text lead">It is an ideal setting to explore a legacy of romance, and create your own love story.
+                                    <br>
+                            </p>
+                            <p>Contact us for details..</p>
+                            <h1 class="text-success">Price : Negotiable</h1>
+                            <button class="btn btn-warning">Book Now</button>
+                    </center>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- CONTROLS -->
+    <a href="#packages" class="carousel-control-prev text-dark " data-slide="prev">
+        <span class="carousel-control-prev-icon "></span>
+    </a>
+
+    <a href="#packages" class="carousel-control-next text-dark " data-slide="next">
+        <span class="carousel-control-next-icon "></span>
+    </a>
+    </div>
+
+    <!-- content end -->
 
     <!-- footer -->
 

@@ -42,3 +42,9 @@ body{
     background-position: center;
     background-blend-mode: overlay;
 }
+.navbar{
+    background: rgba(58, 56, 56, 0.4);
+}
+.navbar:hover{
+    background:rgb(58 ,56,56);
+}
